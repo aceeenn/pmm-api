@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class BookingSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,8 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
-
         $faker = Faker\Factory::create(); //import library faker
 
         $limit = 20; //batasan berapa banyak data
@@ -26,5 +24,6 @@ class DatabaseSeeder extends Seeder
                 'nohp' => $faker->nohp,
             ]);
         }
+        //
     }
 }
